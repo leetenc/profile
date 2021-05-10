@@ -5,7 +5,7 @@
 .container {
   width: 900px;   /* This sets the width */
   margin: 0 auto; /* This automatically sets left/right margins */
-}
+ }
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
@@ -35,6 +35,8 @@ body {
   margin: 0 auto;
   justify-content: center;
   align-content: center;
+   background-image: url("https://images.unsplash.com/photo-1620555791739-438a95e7ff65?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80");
+
 }
 
 h1 {
@@ -60,46 +62,65 @@ h2 {
 }
 
 p {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0px 0px 0px 0px;
 }
 
 a {
-  color: blue;
+  color: grey;
   font-size: 16px;
   font-weight: 900;
   text-decoration: none;
-  transition-duration: 1s;
-  margin: 20px 0px 0px 0px;
+  transition-duration: 0.4s;
+  margin: 10px 0px 10px 0px;
 
 }
 
 a:hover {
-  color: black;
+  color: #339cbe;
+  text-shadow: 1px 1px 2px grey;
 }
 
-.discover {
+
+#discover {
   display: inline-block;
-  margin-top: 20px
+  margin-top: 10px;
+  background-color: #339cbe;
+  color: white;
+  padding: 15px 10px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px grey;
+}
+
+#discover:hover{
+  background-color: #297e9a
 }
 
 #about_me {
-  background-color: #9BD1E5;
+  background-color: #5b57506b;
   color: white;
-  padding: 1px 3px 1px 3px;
+  text-shadow: 1px 1px 1px darkgrey;
+  padding: 2px 3px 2px 3px;
   margin: 0px 0px 0px 0px;
   margin-top: 1px;
   margin-bottom: 10px;
-  border-radius: 5px
+  border-radius: 0px;
+  /*box-shadow: inset 1px 1px 4px rgb(100,100,100,0.5);*/
 }
 
-.ul-inline {
-  list-style: none;
-  padding-left: 0px;
+.follow-me {
+  font-size: 14px;
+  color: #339cbe
 }
 
-.ul-inline > li {
+.follow-me a {
   display: inline-block;
+  padding: 0px 5px;
+  text-shadow: 1px 1px 1px lightgrey;
+}
+
+li {
+  color: grey
   padding: 0px 20px;
 }
 
@@ -107,7 +128,9 @@ a:hover {
   margin-top: 30px
 }
 .card:last-child {
-  padding: 1px;
+  padding: 0px 0px 0px 35px;
+  text-align: left;
+  margin-top: 10px
 }
 
 .card {
